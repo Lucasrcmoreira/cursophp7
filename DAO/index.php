@@ -22,8 +22,21 @@ require_once("config.php");
 
 
 //método que carrega usuário usando login e a senha
-$usuario = new Usuario();
-$usuario->login("macada","1239000") ;
+//$usuario = new Usuario();
+//$usuario->login("macada","1239000") ;
+//echo $usuario;
 
-echo $usuario;
+
+//metodo insert com procedure no banco mysql
+//$aluno = new Usuario("lucas1","senha11");
+//$aluno->insert();
+//echo $aluno;
+
+$user = new Usuario();
+$user->selectUsuario(0);
+echo $user;
+
+$user->update("novousuario","1233");
+
+echo $user;
 ?>
