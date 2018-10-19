@@ -32,11 +32,18 @@ require_once("config.php");
 //$aluno->insert();
 //echo $aluno;
 
-$user = new Usuario();
-$user->selectUsuario(0);
-echo $user;
+//metodo alterando dados de um ussuario
+//$user = new Usuario();
+//$user->selectUsuario(0);
+//echo $user;
+//$user->update("novousuario","1233");
+//echo $user;
 
-$user->update("novousuario","1233");
+$del = new Usuario();
 
-echo $user;
+$del->selectUsuario(0);
+
+$del->delete();
+
+echo $del;
 ?>
